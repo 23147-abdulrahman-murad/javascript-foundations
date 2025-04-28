@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: #f4f4f4; /* Added a light background */
+}
+
+h1 {
+    color: #333;
+}
+
+.buttons button {
+    padding: 12px 24px; /* Slightly larger padding */
+    margin: 8px;       /* Slightly larger margin */
+    font-size: 18px;   /* Slightly larger font */
+    cursor: pointer;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    background-color: #5c67f2; /* Button color */
+    color: white;
+    transition: background-color 0.2s ease; /* Smooth hover effect */
+}
+
+.buttons button:hover {
+    background-color: #4a54cc; /* Darker color on hover */
+}
+
+.buttons button:disabled {
+    background-color: #cccccc; /* Grey out disabled buttons */
+    cursor: not-allowed;
+}
+
+
+#results {
+    margin-top: 25px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    min-width: 350px; /* Slightly wider */
+    text-align: center;
+    background-color: #fff; /* White background for results */
+    border-radius: 8px; /* Rounded corners for the results box */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+#score {
+    font-weight: bold;
+    margin-bottom: 15px; /* More space below score */
+    font-size: 1.1em; /* Slightly larger score font */
+    color: #555;
+}
+
+#round-result {
+     color: #333;
+     min-height: 1.2em; /* Ensure space even when empty initially */
+}
+
+#final-result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em; /* Larger final result text */
+    color: #28a745; /* Green for winner */
+}
+
+#final-result.loser { /* Style for loser message */
+    color: #dc3545; /* Red for loser */
+}
